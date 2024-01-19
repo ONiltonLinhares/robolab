@@ -307,7 +307,7 @@ nav ul li a {
         flex: 0 0 72%; /* O primeiro item ocupa metade da largura da div */
         height: 47.5%;
         margin-bottom: 2%;
-        background-image: url('/imgs/Captura\ de\ tela\ 2024-01-16\ 142549.png');
+        background-image: url('https://github.com/ONiltonLinhares/robolab/blob/main/imgs/Captura%20de%20tela%202024-01-16%20142549.png?raw=true');
         background-position: center;
         background-size: 200%;
     }
