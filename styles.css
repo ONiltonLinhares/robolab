@@ -126,7 +126,7 @@ nav ul li a {
     flex: 0 0 72%; /* O primeiro item ocupa metade da largura da div */
     height: 47.5%;
     margin-bottom: 2%;
-    background-image: url('/imgs/Captura\ de\ tela\ 2024-01-16\ 142549.png');
+    background-image: url('https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/Captura%20de%20tela%202024-01-16%20142549.png');
     background-position: center;
     background-size: 105%;
 }
@@ -177,7 +177,7 @@ nav ul li a {
 
 #cre{
     background-color: #69296B;
-    background-image: url('/imgs/svg/1080x1080\ -\ 3.svg');
+    background-image: url('https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/1080x1080%20-%203.svg');
     background-size: 100%;
     display: flex;
     flex-direction: column;
