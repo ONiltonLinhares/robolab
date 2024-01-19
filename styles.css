@@ -1,0 +1,315 @@
+@font-face {
+    font-family: 'FamiljenGrotesk';
+    src: local('FamiljenGrotesk-Regular'), url('/fonts/FamiljenGrotesk-Regular.ttf') format('ttf');
+    /* Adicione outros formatos de fonte, se necessário */
+}
+
+@font-face {
+    font-family: 'FamiljenGrotesk-Bold';
+    src: local('FamiljenGrotesk-Bold'), url('/fonts/FamiljenGrotesk-Bold.ttf') format('ttf');
+    /* Adicione outros formatos de fonte, se necessário */
+}
+
+
+ 
+@font-face {
+    font-family: 'AeionMono';
+    src: local('AeionMono-Regular'), url('/fonts/AeionMono-Regular.otf') format('otf');
+    /* Adicione outros formatos de fonte, se necessário */
+}
+
+@font-face {
+    font-family: 'AeionMono-Light';
+    src: local('AeionMono-Light'), url('/fonts/AeionMono-Light.otf') format('otf');
+    /* Adicione outros formatos de fonte, se necessário */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #E9F0F2;
+}
+
+header {
+    background-color: #065044;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
+}
+
+#logo {
+    height: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-family: 'AeionMono-light';
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #86F874;
+}
+
+.body-content {
+    display: flex;
+    padding: 2%;
+    background-color: #E9F0F2;
+}
+
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    flex: 1;
+    border-radius: 20px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: scale(1.01); 
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin: 8px;
+}
+
+.item:first-child {
+    flex: 0 0 98%; /* O primeiro item ocupa metade da largura da div */
+    height: 47.5%;
+}
+
+.item:not(:first-child) {
+    flex: 1; /* Os outros dois itens têm larguras dinâmicas */
+    height: 47.5%;
+}
+
+.large-image-card {
+    background-image: url('image1.jpg');
+    background-size: cover;
+}
+
+.item2 {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin: 8px ;
+}
+
+.item2:first-child {
+    flex: 0 0 72%; /* O primeiro item ocupa metade da largura da div */
+    height: 47.5%;
+    margin-bottom: 2%;
+    background-image: url('/imgs/Captura\ de\ tela\ 2024-01-16\ 142549.png');
+    background-position: center;
+    background-size: 105%;
+}
+
+.item2:not(:first-child) {
+    /* flex: 1; Os outros dois itens têm larguras dinâmicas */
+    height: 47.5%;
+    background-color: #86F874;
+}
+
+/* .large-image-card {
+    background-image: url('image1.jpg');
+    background-size: cover;
+} */
+
+/* .card p {
+    text-align: center;
+} */
+
+/* Adjustments for better display */
+.header img, .large-image-card {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* This part is for demonstration purposes. Adjust your layout as needed. */
+.left-column {
+    height: 37vw;
+    padding: 0%;
+    margin-right: 0.1%;
+}
+
+.right-column {
+    height: 37.5vw;
+    padding: 0%;
+    margin-left: 0.1%;
+}
+
+#cve{
+    background-color: #065044;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #86F874;
+    font-family: 'FamiljenGrotesk';
+    font-size: 20px;
+}
+
+#cre{
+    background-color: #69296B;
+    background-image: url('/imgs/svg/1080x1080\ -\ 3.svg');
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #E9F0F2;
+    font-family: 'FamiljenGrotesk';
+    font-size: 20px;
+}
+
+#crc{
+    background-color: #E582E8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'FamiljenGrotesk';
+    align-items: start;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#crc ul{
+    margin-left: 19px;
+}
+
+#crc a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#crc .contato{
+    height: 25%;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5); 
+    font-family: 'AeionMono', 'Regular';
+    text-align: left;
+    border-radius: 9px;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+}
+
+/* #cvc {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "FamiljenGrotesk", "Bold";
+    text-decoration: none;
+} */
+
+#cvc a{
+    height: 100%;
+    text-decoration: none;
+    color: #065044;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "FamiljenGrotesk-bold";    
+}
+
+#cvc img {
+    margin-right: 10px;
+}
+
+.direitos{
+    margin: 0%;
+    padding: 0%;
+    width: 97%;
+    text-align: right;
+    font-size: 60%;
+    color: #065044;
+    font-family: 'AeionMono';
+}
+/* Making sure cards are appropriately sized
+.large-card {
+    height: 50%;
+}
+
+.small-card {
+    height: calc(25% - 20px); accounts for margin
+}
+
+.large-image-card {
+    height: calc(66.666% - 20px); accounts for margin
+} */
+
+/* .card {
+    height: calc(33.333% - 20px);
+} */
+
+@media (max-width: 600px) {
+
+    header {
+        background-color: #065044;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 2%;
+
+        font-size: small;
+    }
+
+    .body-content {
+        flex-direction: column;
+        height: 150vh;
+    }
+
+    #cre {
+        font-size: medium;
+    }
+
+    #crc {
+        font-size: medium;
+    }
+
+    #crc ul li{
+        font-size: small;
+    }
+
+    #crc .contato{
+        height: 22%;
+    }
+
+    .item2:first-child {
+        flex: 0 0 72%; /* O primeiro item ocupa metade da largura da div */
+        height: 47.5%;
+        margin-bottom: 2%;
+        background-image: url('/imgs/Captura\ de\ tela\ 2024-01-16\ 142549.png');
+        background-position: center;
+        background-size: 200%;
+    }
+
+}
