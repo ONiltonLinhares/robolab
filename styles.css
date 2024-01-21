@@ -172,13 +172,34 @@ nav ul li a {
     justify-content: space-between;
     color: #86F874;
     font-family: 'FamiljenGrotesk';
-    font-size: 20px;
+    font-size: 190%;
+}
+
+.texto_cve {
+    height: 40%;
+    font-size: large;
+    color: #86F874;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'AeionMono', 'Regular';
+}
+
+.texto_cve u {
+    color: #E9F0F2;
+    text-decoration: none;
+}
+
+.imagens{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 #cre{
     background-color: #69296B;
     background-image: url('https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/1080x1080%20-%203.svg');
-    background-size: 100%;
+    background-size: 120%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -195,29 +216,42 @@ nav ul li a {
     justify-content: space-between;
     font-family: 'FamiljenGrotesk';
     align-items: start;
-    color: rgb(0, 0, 0);
+    color: #69296B;
     text-decoration: none;
+    font-size: large;
 }
 
 #crc ul{
-    margin-left: 19px;
+    list-style-type: none;
+    font-size: small;
+}
+
+#crc ul li{
+    margin-bottom: 2%;
+}
+
+#crc ul li img{
+    width: 1.5%;
+    transform: rotate(90deg);
+    margin-right: 1%;
 }
 
 #crc a {
-    color: rgb(0, 0, 0);
+    color: #69296B;
     text-decoration: none;
 }
 
 #crc .contato{
     height: 25%;
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.5); 
+    border: 1px solid #69296B; 
     font-family: 'AeionMono', 'Regular';
     text-align: left;
     border-radius: 9px;
     padding: 2%;
     display: flex;
     align-items: center;
+    font-size: medium;
 }
 
 /* #cvc {
@@ -274,6 +308,7 @@ nav ul li a {
 
     header {
         background-color: #065044;
+        width: 100vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -289,10 +324,11 @@ nav ul li a {
 
     #cre {
         font-size: medium;
+        background-size: 200%;
     }
 
-    #crc {
-        font-size: medium;
+    .texto_cve p {
+        margin-bottom: 10%;
     }
 
     #crc ul li{
