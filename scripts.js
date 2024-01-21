@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             contentContainer.innerHTML = "";
             setTimeout(function() {
-                toggleButton.innerHTML = '<ul><li><img src="/imgs/svg/Elemento - 6.svg"><a href="https://www.instagram.com/_robolab/" target="_blank">Instagram: @_robolab</a></li><li><img src="/imgs/svg/Elemento - 6.svg"><a href="mailto:robolab.ltda@gmail.com" target="_blank">Email: robolab.ltda@gmail.com</a></li><li><img src="/imgs/svg/Elemento - 6.svg"><a href="https://wa.me/557991556000" target="_blank">Contato: +55 (79) 991556000</a></li><li><img src="/imgs/svg/Elemento - 6.svg"><a href="https://www.google.com/maps/place/R.+Comendador+Manoel+Gon%C3%A7alves,+6+-+Grageru,+Aracaju+-+SE,+49027-050/@-10.944681,-37.0668118,20.5z/data=!4m6!3m5!1s0x71ab3c363c545cb:0xbb1e5de4816f2612!8m2!3d-10.9446513!4d-37.0667206!16s%2Fg%2F11hbgjyk0s?entry=ttu" target="_blank">localização: R. Comendador Manoel Gonçalves, 06 - Grageru, Aracaju - SE, 49027-050</a></li></ul><div class="contato"><p>Entrar em contato</p></div>';
+                toggleButton.innerHTML = '<ul><li><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/Elemento%20-%206.svg"><a href="https://www.instagram.com/_robolab/" target="_blank">Instagram: @_robolab</a></li><li><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/Elemento%20-%206.svg"><a href="mailto:robolab.ltda@gmail.com" target="_blank">Email: robolab.ltda@gmail.com</a></li><li><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/Elemento%20-%206.svg"><a href="https://wa.me/557991556000" target="_blank">Contato: +55 (79) 991556000</a></li><li><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/Elemento%20-%206.svg"><a href="https://www.google.com/maps/place/R.+Comendador+Manoel+Gon%C3%A7alves,+6+-+Grageru,+Aracaju+-+SE,+49027-050/@-10.944681,-37.0668118,20.5z/data=!4m6!3m5!1s0x71ab3c363c545cb:0xbb1e5de4816f2612!8m2!3d-10.9446513!4d-37.0667206!16s%2Fg%2F11hbgjyk0s?entry=ttu" target="_blank">localização: R. Comendador Manoel Gonçalves, 06 - Grageru, Aracaju - SE, 49027-050</a></li></ul><div class="contato"><p>Entrar em contato</p></div>';
                 toggleButton.style.fontFamily = 'AeionMono', 'Regular';
             }, 500);
         }
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var original_cve_altura = cre.style.height;
 
     function ajustecve() {
-        if (crc.innerHTML.trim() == '<ul><li><img src="/imgs/svg/Elemento - 6.svg"><a href="https://www.instagram.com/_robolab/" target="_blank">Instagram: @_robolab</a></li><li><img src="/imgs/svg/Elemento - 6.svg"><a href="mailto:robolab.ltda@gmail.com" target="_blank">Email: robolab.ltda@gmail.com</a></li><li><img src="/imgs/svg/Elemento - 6.svg"><a href="https://wa.me/557991556000" target="_blank">Contato: +55 (79) 991556000</a></li><li><img src="/imgs/svg/Elemento - 6.svg"><a href="https://www.google.com/maps/place/R.+Comendador+Manoel+Gon%C3%A7alves,+6+-+Grageru,+Aracaju+-+SE,+49027-050/@-10.944681,-37.0668118,20.5z/data=!4m6!3m5!1s0x71ab3c363c545cb:0xbb1e5de4816f2612!8m2!3d-10.9446513!4d-37.0667206!16s%2Fg%2F11hbgjyk0s?entry=ttu" target="_blank">localização: R. Comendador Manoel Gonçalves, 06 - Grageru, Aracaju - SE, 49027-050</a></li></ul><div class="contato"><p>Entrar em contato</p></div>' ){
+        if (crc.innerHTML.trim() == '<ul><li><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/Elemento%20-%206.svg"><a href="https://www.instagram.com/_robolab/" target="_blank">Instagram: @_robolab</a></li><li><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/Elemento%20-%206.svg"><a href="mailto:robolab.ltda@gmail.com" target="_blank">Email: robolab.ltda@gmail.com</a></li><li><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/Elemento%20-%206.svg"><a href="https://wa.me/557991556000" target="_blank">Contato: +55 (79) 991556000</a></li><li><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/Elemento%20-%206.svg"><a href="https://www.google.com/maps/place/R.+Comendador+Manoel+Gon%C3%A7alves,+6+-+Grageru,+Aracaju+-+SE,+49027-050/@-10.944681,-37.0668118,20.5z/data=!4m6!3m5!1s0x71ab3c363c545cb:0xbb1e5de4816f2612!8m2!3d-10.9446513!4d-37.0667206!16s%2Fg%2F11hbgjyk0s?entry=ttu" target="_blank">localização: R. Comendador Manoel Gonçalves, 06 - Grageru, Aracaju - SE, 49027-050</a></li></ul><div class="contato"><p>Entrar em contato</p></div>' ){
             return 0;
         }
         crc.classList.toggle("alterado", !estilosAlterados);
@@ -140,18 +140,18 @@ document.addEventListener("DOMContentLoaded", function() {
             setTimeout(function() {
                 crc.style.height = original_crc_altura;
                 cre.style.height = original_cre_altura;
-            }, 30);
+            }, 40);
 
             cve.innerHTML = original_cve
 
             setTimeout(function() {
                 crc.innerHTML = original_crc;
                 cre.innerHTML = original_cre;
-            }, 40);
+            }, 300);
         } else {
             crc.innerHTML = "";
             cre.innerHTML = "";
-            cve.innerHTML = '<div class="texto_cve"><p>Treinamos alunos de <u>10 a 14 anos</u> para construir e programar robos destinados a competições</p><p>Nossa metodologia alia o conhecimento tecnico com a <u>mentalidade esportiva</u>.</p></div><div class="imagens"><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/clube%20de%20robotica.svg" style="height: 23px;"><img src="/imgs/svg/mais.svg" style="height: 23px;"></div>';
+            cve.innerHTML = '<div class="texto_cve"><p>Treinamos alunos de <u>10 a 14 anos</u> para construir e programar robos destinados a competições</p><p>Nossa metodologia alia o conhecimento tecnico com a <u>mentalidade esportiva</u>.</p></div><div class="imagens"><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/clube%20de%20robotica.svg" style="height: 23px;"><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/mais.svg" style="height: 23px;"></div>';
 
             if (isMobile()) {
                 cve.style.height = "64vh";
