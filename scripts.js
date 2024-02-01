@@ -112,6 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var crc = document.getElementById("crc");
     var cre = document.getElementById("cre");
     var cve = document.getElementById("cve");
+    var listButton = document.getElementById("li_treinamento");
 
     var estilosAlterados = false;
 
@@ -165,4 +166,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     cve.addEventListener("click", ajustecve);
+    listButton.addEventListener("click", ajustecve);
 });
