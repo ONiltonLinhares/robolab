@@ -4,24 +4,11 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f4f4f4;
-    overflow: hidden; /* Evitar a barra de rolagem durante a animação */
+    background-color: #f9f9f9;
 }
 
 .loader-wrapper {
     text-align: center;
-    animation: fadeOutUp 2s forwards;
-}
-
-@keyframes fadeOutUp {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
 }
 
 .loader {
