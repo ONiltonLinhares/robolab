@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'FamiljenGrotesk';
-    src: local('FamiljenGrotesk-Regular'), url('/fonts/FamiljenGrotesk-Regular.ttf') format('ttf');
+    src: local('FamiljenGrotesk-Regular'), url('https://github.com/ONiltonLinhares/robolab/blob/ddeda49dcb681bf06f41ccf5f789ccdfcf9da9f4/fonts/FamiljenGrotesk-Regular.ttf') format('ttf');
     /* Adicione outros formatos de fonte, se necessário */
 }
 
 @font-face {
     font-family: 'FamiljenGrotesk-Bold';
-    src: local('FamiljenGrotesk-Bold'), url('/fonts/FamiljenGrotesk-Bold.ttf') format('ttf');
+    src: local('FamiljenGrotesk-Bold'), url('https://github.com/ONiltonLinhares/robolab/blob/ddeda49dcb681bf06f41ccf5f789ccdfcf9da9f4/fonts/FamiljenGrotesk-Bold.ttf') format('ttf');
     /* Adicione outros formatos de fonte, se necessário */
 }
 
@@ -14,13 +14,13 @@
  
 @font-face {
     font-family: 'AeionMono';
-    src: local('AeionMono-Regular'), url('/fonts/AeionMono-Regular.otf') format('otf');
+    src: local('AeionMono-Regular'), url('https://github.com/ONiltonLinhares/robolab/blob/ddeda49dcb681bf06f41ccf5f789ccdfcf9da9f4/fonts/fonts/AeionMono-Regular.otf') format('otf');
     /* Adicione outros formatos de fonte, se necessário */
 }
 
 @font-face {
     font-family: 'AeionMono-Light';
-    src: local('AeionMono-Light'), url('/fonts/AeionMono-Light.otf') format('otf');
+    src: local('AeionMono-Light'), url('https://github.com/ONiltonLinhares/robolab/blob/ddeda49dcb681bf06f41ccf5f789ccdfcf9da9f4/fonts/fonts/AeionMono-Light.otf') format('otf');
     /* Adicione outros formatos de fonte, se necessário */
 }
 
