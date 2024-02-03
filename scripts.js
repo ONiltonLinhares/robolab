@@ -2,6 +2,12 @@ function isMobile() {
     return window.innerWidth < 768; // Defina o valor desejado para o ponto de corte de largura
 }
 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 // Função para definir ou resetar o estilo do Flexbox
 function ajustarFlexbox(estaAtivado) {
     var cre = document.getElementById('cre');
@@ -24,7 +30,7 @@ function ajustarFlexbox(estaAtivado) {
     }
 }
 
-// O resto da função toggleSize permanece igual, assim como o event listener
+
 
 // Atualiza a função toggleSize para incluir o ajuste do Flexbox
 function toggleSize() {
@@ -47,7 +53,7 @@ function toggleSize() {
     ajustarFlexbox(estaAtivado);
 }
 
-// Não esquece de adicionar o 'listener' do evento né!
+
 document.getElementById('crc').addEventListener('click', toggleSize);
 document.getElementById('li_contato').addEventListener('click', toggleSize);
 
@@ -103,7 +109,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -152,8 +159,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             crc.innerHTML = "";
             cre.innerHTML = "";
-            cve.innerHTML = '<div class="texto_cve"><p>Treinamos alunos de <u>10 a 14 anos</u> para construir e programar robos destinados a competições</p><p>Nossa metodologia alia o conhecimento tecnico com a <u>mentalidade esportiva</u>.</p></div><div class="imagens"><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/clube%20de%20robotica.svg" style="height: 23px;"><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/mais.svg" style="height: 23px;"></div>';
-
+            cve.innerHTML = '<div class="texto_cve"><p>Treinamos alunos de <u>10 a 14 anos</u> para construir e programar robos destinados a competições</p><p>Nossa metodologia alia o conhecimento tecnico com a <u>mentalidade esportiva</u>.</p></div><div class="imagens"><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/clube%20de%20robotica.svg" style="height: 23px;"><img src="/imgs/sinal-de-menos.png" style="height: 23px;"></div>';
             if (isMobile()) {
                 cve.style.height = "64vh";
             } else {
