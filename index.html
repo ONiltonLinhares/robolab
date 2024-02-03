@@ -8,14 +8,42 @@
     <link rel="icon" href="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/ICONE%20SITE%20(1).png" type="image/png" sizes="64x64">
 </head>
 <body>
-    <div class="loader-wrapper">
-        <img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/load.gif" height="400vh">
-    </div>
+
+    <img id="rotatingImage" src="/imgs/svg/simbolo animação.svg" height="100vh">
+    <img  src="/imgs/svg/Design sem nome.svg" height="80vh">
     <script>
+        // Função para girar a imagem continuamente
+        function rotateImage() {
+            const imgElement = document.getElementById('rotatingImage');
+            let currentRotation = 0;
+            let rotationSpeed = 13;  // Velocidade inicial de rotação
+
+            function animate() {
+                // Ajustar a velocidade de rotação para criar desaceleração
+                rotationSpeed *= 0.97;  // Você pode ajustar esse fator para controlar a taxa de desaceleração
+
+                // Incrementar o ângulo de rotação
+                currentRotation += rotationSpeed;
+
+                // Aplicar a rotação à imagem
+                imgElement.style.transform = `rotate(${currentRotation}deg)`;
+
+                // Se a velocidade for suficientemente baixa, pare a animação
+                if (Math.abs(rotationSpeed) > 0.1) {
+                    requestAnimationFrame(animate);
+                }
+            }
+
+            animate();
+        }
+
+        // Chamando a função para iniciar a rotação
+        rotateImage();
+
         window.addEventListener('load', function () {
             setTimeout(function() {
                 window.location.replace('home.html');
-            }, 1000);
+            }, 1350);
         });
     </script>
 </body>
