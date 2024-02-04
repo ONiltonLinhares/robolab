@@ -176,13 +176,16 @@ nav ul li a {
 }
 
 .texto_cve {
-    height: 40%;
-    font-size: large;
+    height: 70%;
+    font-size: 1.2vw;
+    margin-left: 1%;
+    margin-right: 1%;
     color: #86F874;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-family: 'AeionMono', 'Regular';
+    text-align: justify;
 }
 
 .texto_cve u {
@@ -196,16 +199,43 @@ nav ul li a {
     justify-content: space-between;
 }
 
-#cre{
+#cre {
+    position: relative;
     background-color: #69296B;
-    background-image: url('https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/1080x1080%20-%203.svg');
-    background-size: 120%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: #E9F0F2;
     font-family: 'FamiljenGrotesk';
     font-size: 20px;
+
+    --background-opacity: 0.3;
+    --background-size: 120%;
+}
+
+#cre::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/1080x1080%20-%203.svg');
+    background-size: 120%;
+    opacity: 0.3;
+    z-index: -1; /* Para garantir que o pseudo-elemento esteja atrás do conteúdo de #cre */
+}
+
+
+.texto_cre {
+    height: 70%;
+    font-size: 1.25vw;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
 }
 
 #crc{
@@ -214,7 +244,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    font-family: 'FamiljenGrotesk';
+    font-family: 'FamiljenGrotesk-bold';
     align-items: start;
     color: #69296B;
     text-decoration: none;
@@ -325,6 +355,14 @@ nav ul li a {
     #cre {
         font-size: medium;
         background-size: 200%;
+    }
+
+    #cre::before {
+        background-size: 150%;
+    }
+    .texto_cre {
+        height: 80%;
+        font-size: small;
     }
 
     .texto_cve p {
