@@ -1,5 +1,11 @@
-function isMobile() {
-    return window.innerWidth < 768; // Defina o valor desejado para o ponto de corte de largura
+function isPortraitOrSmallScreen() {
+    if (window.matchMedia("(orientation: portrait)").matches) {
+        return true; // Se a tela estiver no modo portrait
+    } else if (window.screen.width < 1050) {
+        return true; // Se a largura da tela for menor que 1050
+    } else {
+        return false; // Se não for nem portrait nem tela pequena
+    }
 }
 
 var crc = document.getElementById("crc");
@@ -21,7 +27,7 @@ var original_css_crc = crc.style;
 var original_css_cre = cre.style;
 
 var novo_html_crc = '<ul><li><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/Elemento%20-%206.svg"><a href="https://www.instagram.com/_robolab/" target="_blank">Instagram: @_robolab</a></li><li><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/Elemento%20-%206.svg"><a href="mailto:robolab.ltda@gmail.com" target="_blank">Email: robolab.ltda@gmail.com</a></li><li><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/Elemento%20-%206.svg"><a href="https://wa.me/557991556000" target="_blank">Contato: +55 (79) 991556000</a></li><li><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/Elemento%20-%206.svg"><a href="https://www.google.com/maps/place/R.+Comendador+Manoel+Gon%C3%A7alves,+6+-+Grageru,+Aracaju+-+SE,+49027-050/@-10.944681,-37.0668118,20.5z/data=!4m6!3m5!1s0x71ab3c363c545cb:0xbb1e5de4816f2612!8m2!3d-10.9446513!4d-37.0667206!16s%2Fg%2F11hbgjyk0s?entry=ttu" target="_blank">localização: R. Comendador Manoel Gonçalves, 06 - Grageru, Aracaju - SE, 49027-050</a></li></ul><div class="contato"><p>Entrar em contato</p></div>';
-var novo_html_cve = '<div class="texto_cve"><p>Treinamos alunos de <u>10 a 14 anos</u> para construir e programar robos destinados a competições</p><p>Nossa metodologia alia o conhecimento tecnico com a <u>mentalidade esportiva</u>.</p><p>A robótica, conhecida como um <u>esporte para a mente</u>, representa uma abordagem inovadora para o desenvolvimento <u>cognitivo e técnico</u> das crianças. Ao contrário dos esportes convencionais, a robótica engloba uma combinação única de habilidades <u>intelectuais e práticas</u>, transformando o aprendizado em uma emocionante jornada de descobertas.</p></div><div class="imagens"><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/clube%20de%20robotica.svg" style="height: 23px;"><img src="/imgs/svg/menos.svg" style="height: 23px;"></div>';
+var novo_html_cve = '<div class="texto_cve"><p>Treinamos alunos de <u>10 a 14 anos</u> para construir e programar robos destinados a competições</p><p>Nossa metodologia alia o conhecimento tecnico com a <u>mentalidade esportiva</u>.</p><p>A robótica, conhecida como um <u>esporte para a mente</u>, representa uma abordagem inovadora para o desenvolvimento <u>cognitivo e técnico</u> das crianças. Ao contrário dos esportes convencionais, a robótica engloba uma combinação única de habilidades <u>intelectuais e práticas</u>, transformando o aprendizado em uma emocionante jornada de descobertas.</p></div><div class="imagens"><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/clube%20de%20robotica.svg" style="height: 23px;"><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/menos.svg" style="height: 23px;"></div>';
 var novo_html_cre = '<div class="texto_cre"><p>O Competition- Based Learning (CBL) é uma abordagem de ensino que promove a <b>competição</b> como estímulo para <b>maximar a aprendizagem</b> de um grupo de alunos. O CBL é a metodologia base do treinamento ROBOLAB.</p><p>Treinar robótica como um <b>esporte</b> oferece uma série de vantagens notáveis. Em primeiro lugar, promove o <b>pensamento crítico</b> e a <b>resolução de problemas</b>, pois os participantes enfrentam desafios complexos que exigem criatividade e raciocínio lógico para encontrar <b>soluções eficientes</b>. Além disso, a colaboração é essencial, incentivando a comunicação e o trabalho em equipe, habilidades cruciais não apenas na robótica, mas em diversas áreas da <b>vida</b>.</p></div><div class="imagens"><img src="https://raw.githubusercontent.com/ONiltonLinhares/robolab/main/imgs/svg/esporte%20para%20mente.svg" style="height: 35px;"></div>';
 
 // Atualiza a função toggleSize para incluir o ajuste do Flexbox

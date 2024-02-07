@@ -171,7 +171,7 @@ nav ul li a {
     flex-direction: column;
     justify-content: space-between;
     color: #86F874;
-    font-family: 'FamiljenGrotesk';
+    font-family: 'FamiljenGrotesk', Arial;
     font-size: 190%;
 }
 
@@ -184,7 +184,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: 'AeionMono', 'Regular';
+    font-family: 'AeionMono', Courier;
     text-align: justify;
 }
 
@@ -206,7 +206,7 @@ nav ul li a {
     flex-direction: column;
     justify-content: space-between;
     color: #E9F0F2;
-    font-family: 'FamiljenGrotesk';
+    font-family: 'FamiljenGrotesk', Arial;
     font-size: 20px;
 
     --background-opacity: 0.3;
@@ -244,7 +244,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    font-family: 'FamiljenGrotesk-bold';
+    font-family: 'FamiljenGrotesk-bold', Arial;
     align-items: start;
     color: #69296B;
     text-decoration: none;
@@ -275,7 +275,7 @@ nav ul li a {
     height: 25%;
     width: 100%;
     border: 1px solid #69296B; 
-    font-family: 'AeionMono', 'Regular';
+    font-family: 'AeionMono', Courier;
     text-align: left;
     border-radius: 9px;
     padding: 2%;
@@ -297,7 +297,7 @@ nav ul li a {
     height: 100%;
     text-decoration: none;
     color: #065044;
-    font-size: 25px;
+    font-size: 2vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -315,7 +315,7 @@ nav ul li a {
     text-align: right;
     font-size: 60%;
     color: #065044;
-    font-family: 'AeionMono';
+    font-family: 'AeionMono', Courier;
 }
 /* Making sure cards are appropriately sized
 .large-card {
@@ -336,6 +336,10 @@ nav ul li a {
 
 @media only screen and (orientation: portrait) {
 
+    nav ul {
+        font-family: 'AeionMono-light';
+    }
+
     header {
         background-color: #065044;
         width: 100vw;
@@ -352,6 +356,20 @@ nav ul li a {
         height: 150vh;
     }
 
+    .texto_cve {
+        font-family: 'FamiljenGrotesk', Arial;
+    }
+    
+    .texto_cve {
+        font-family: 'AeionMono', Courier;
+        height: 80%;
+        font-size: 2vh;
+    }
+
+    #crc {
+        font-family: 'FamiljenGrotesk-bold', Arial;
+    }
+
     #cre {
         font-size: medium;
         background-size: 200%;
@@ -362,28 +380,38 @@ nav ul li a {
     }
     .texto_cre {
         height: 80%;
-        font-size: small;
+        font-size: 3vw;
     }
 
     .texto_cve p {
         margin-bottom: 10%;
     }
+    
+    #cvc p{
+        font-size: 5vw;
+    }
+
+    #cvc a{
+        font-family: "FamiljenGrotesk-bold";    
+    }
 
     #crc ul li{
+        font-family: 'AeionMono', Courier;
         font-size: small;
     }
 
     #crc .contato{
+        font-family: 'AeionMono', Courier;
         height: 22%;
     }
 
     .item2:first-child {
         flex: 0 0 72%; /* O primeiro item ocupa metade da largura da div */
-        height: 47.5%;
         margin-bottom: 2%;
         background-image: url('https://github.com/ONiltonLinhares/robolab/blob/main/imgs/Captura%20de%20tela%202024-01-16%20142549.png?raw=true');
         background-position: center;
-        background-size: 200%;
+        background-size: 250%;
+        height: 100%;
     }
 
 }
