@@ -1,10 +1,10 @@
-function isPortraitOrSmallScreen() {
+function isMobile() {
     if (window.matchMedia("(orientation: portrait)").matches) {
         return true; // Se a tela estiver no modo portrait
     } else if (window.screen.width < 1050) {
         return true; // Se a largura da tela for menor que 1050
     } else {
-        return false; // Se não for nem portrait nem tela pequena
+        return false; // Se não for nem portrait nem tela pequena   
     }
 }
 
